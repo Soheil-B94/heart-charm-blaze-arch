@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8000/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Meridian",
+      "hasCanvas": false,
+      "bodyTextLen": 3676,
+      "bodyTextHash": "be7e5ed98834f7ff6ef28a6f1f24262d19da4d958820457467baad58d09786a2",
+      "bodyTextPrefix": "ATLAS Meridian Years a newborn is expected to live. Life expecta",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/python-meridian.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Meridian",
+      "hasCanvas": false,
+      "bodyTextLen": 3676,
+      "bodyTextHash": "f2498718f8707da34903c144db470c8dc3715043332c430db83588c998316ff7",
+      "bodyTextPrefix": "ATLAS Meridian Life expectancy GDP per person Population Interne",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/python-meridian-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/python-meridian.json"
+}

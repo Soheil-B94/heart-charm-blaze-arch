@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meridian</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c1214'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%231d4a40'/%3E%3Cellipse cx='16' cy='16' rx='4.4' ry='10' fill='%23e8c27a'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23f3efe6' stroke-width='2.4'/%3E%3Crect x='6' y='14.8' width='20' height='2.4' rx='1.2' fill='%23f6edd8'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Outfit:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand-row">
+          <div class="brand">
+            <svg viewBox="0 0 32 32" class="mark" aria-hidden="true">
+              <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <ellipse cx="16" cy="16" rx="4.6" ry="11" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <path d="M5 16h22" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+            <div>
+              <p class="kicker">Atlas</p>
+              <h1>Meridian</h1>
+            </div>
+          </div>
+          <p id="blurb" class="blurb desktop-only"></p>
+        </div>
+        <div id="metrics" class="metrics" role="toolbar" aria-label="Map metric"></div>
+        <p id="blurb-mobile" class="blurb mobile-only"></p>
+      </header>
+      <div class="stage">
+        <section class="map-pane">
+          <div id="map" class="map">
+            <p id="loading" class="loading">Loading map…</p>
+          </div>
+          <div class="overlay">
+            <div id="legend" class="legend"></div>
+            <div class="zoom">
+              <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+              <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+              <button type="button" id="zoom-reset" aria-label="Reset view">↺</button>
+            </div>
+          </div>
+        </section>
+        <aside class="panel">
+          <div class="search-wrap">
+            <label class="search">
+              <span class="sr-only">Search countries</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="1.8"/></svg>
+              <input id="search" type="search" placeholder="Search countries" autocomplete="off" />
+            </label>
+          </div>
+          <div id="panel-scroll" class="panel-scroll">
+            <p id="live" class="sr-only" aria-live="polite"></p>
+            <div id="detail"></div>
+            <div id="ranking"></div>
+            <p class="note">Sample figures, rounded from public estimates around 2023. For exploring the map, not official statistics.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="d3.min.js"></script>
+    <script src="topojson-client.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
